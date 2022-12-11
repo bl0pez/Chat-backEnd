@@ -38,7 +38,7 @@ class Server {
         this.app.use(express.json());
 
         //Api Endpoints
-        this.app.use('/api/login', require('../routes/auth'));
+        this.app.use('/api/auth', require('../router/auth'));
 
     }
 
